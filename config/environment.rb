@@ -11,8 +11,6 @@ RAILS_GEM_VERSION = '2.2.2' unless defined? RAILS_GEM_VERSION
 require File.join(File.dirname(__FILE__), 'boot')
 
 Rails::Initializer.run do |config|
-	config.action_controller.relative_url_root = '/~tack/index.php'
-
   config.time_zone = 'Central Time (US & Canada)'
 	config.i18n.default_locale = :en
 
