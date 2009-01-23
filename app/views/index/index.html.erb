@@ -5,19 +5,21 @@
 	<head>
 		<title>Andres Jaan Tack :: Home (Under Construction)</title>
 		<meta name="author" content="Andres Jaan Tack" />
-		<link href="/stylesheets/main.css" media="screen" rel="stylesheet" type="text/css" />
+		<%= stylesheet_link_tag 'main' %>
 	</head>
 	
 	<body>
 		
 		<div id="CenterBlock">
-			<img alt="Headshot" id="Headshot" src="images/headshot.jpg" />
+			<div class="spacer"></div>
+			<%= image_tag 'headshot.jpg', :id => 'Headshot' %>
 			<div id="TitleBlock">
-				<h1>Andres Jaan Tack</h1>
+				<h1><%=t :name -%></h1>
 				<p>
-					I am a first-year graduate student in computer science at the University of Wisconsin-Madison, I am an aspiring teacher and researcher, and I am a musician. This will be my home page, where I will discuss all of these interests together, for the benefit of any interested.
+					<%=t :purpose_statement %>
 				</p>
 			</div>
+			<div class="spacer"></div>
 		</div>
 
 		<div id="Footer">

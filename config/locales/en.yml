@@ -2,4 +2,5 @@
 # See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
 
 en:
-  hello: "Hello world"
+  name: "Andres Jaan Tack"
+  purpose_statement: I am a first-year graduate student in computer science at the University of Wisconsin-Madison, I am an aspiring teacher and researcher, and I am a musician. This will be my home page, where I will discuss all of these interests together, for the benefit of any interested.
