@@ -11,11 +11,10 @@ RAILS_GEM_VERSION = '2.2.2' unless defined? RAILS_GEM_VERSION
 require File.join(File.dirname(__FILE__), 'boot')
 
 Rails::Initializer.run do |config|
-  config.time_zone = 'Central Time (US & Canada)'
+	config.time_zone = 'Central Time (US & Canada)'
 	config.i18n.default_locale = :en
-
-  config.action_controller.session = {
-    :session_key => '_website_session',
-    :secret      => '5ea7f317ca16ad18f0f0f2e9b6cd6f185e4785ad2acc32ebc6661a3a68b017a04159487f7a060332765ae5e393b55085d8cfdce5a0f8b78330b6da37d6f57399'
-  }
+	config.action_controller.session = {
+		:session_key => '_website_session',
+		:secret      => '5ea7f317ca16ad18f0f0f2e9b6cd6f185e4785ad2acc32ebc6661a3a68b017a04159487f7a060332765ae5e393b55085d8cfdce5a0f8b78330b6da37d6f57399'
+	}
 end
