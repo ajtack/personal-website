@@ -1,0 +1,28 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<title>Andres Jaan Tack :: Home (Under Construction)</title>
+		<meta name="author" content="Andres Jaan Tack" />
+		<%= stylesheet_link_tag 'main' %>
+	</head>
+	
+	<body>
+		<%= yield %>
+		
+		<script type="text/javascript">
+			var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+			document.write(unescape("%3Cscript src='" + gaJsHost + 
+			                        "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		<script type="text/javascript">
+			try {
+				var pageTracker = _gat._getTracker("UA-7186268-1");
+				pageTracker._trackPageview();
+			} catch(err) {
+				// Nothing
+			}
+		</script>
+	</body>
+</html>

@@ -1,32 +1,17 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
-"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<div id="CenterBlock">
+	<div class="spacer"></div>
+	<%= image_tag 'headshot.jpg', :id => 'Headshot' %>
+	<div id="TitleBlock">
+		<h1><%=t :name -%></h1>
+		<p>
+			<%=t :purpose_statement %>
+		</p>
+	</div>
+	<div class="spacer"></div>
+</div>
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-	<head>
-		<title>Andres Jaan Tack :: Home (Under Construction)</title>
-		<meta name="author" content="Andres Jaan Tack" />
-		<%= stylesheet_link_tag 'main' %>
-	</head>
-	
-	<body>
-		
-		<div id="CenterBlock">
-			<div class="spacer"></div>
-			<%= image_tag 'headshot.jpg', :id => 'Headshot' %>
-			<div id="TitleBlock">
-				<h1><%=t :name -%></h1>
-				<p>
-					<%=t :purpose_statement %>
-				</p>
-			</div>
-			<div class="spacer"></div>
-		</div>
-
-		<div id="Footer">
-			<p class="subtle">
-				All content is Copyright 2008 Andres Jaan Tack unless otherwise noted.
-			</p>
-		</div>
-
-	</body>
-</html>
+<div id="Footer">
+	<p class="subtle">
+		All content is Copyright 2008 Andres Jaan Tack unless otherwise noted.
+	</p>
+</div>
