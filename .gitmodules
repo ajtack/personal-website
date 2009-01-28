@@ -1,3 +1,0 @@
-[submodule "vendor/plugins/http_accept_language"]
-	path = vendor/plugins/http_accept_language
-	url = git@github.com:ajtack/http_accept_language.git
