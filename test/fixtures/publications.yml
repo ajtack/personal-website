@@ -1,7 +1,13 @@
 # Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
 
 one:
-  title: MyString
+  title: Some Random Publication
+  venue: one
 
-two:
-  title: MyString
+file_systems_paper:
+  title: A File Systems Paper
+  venue: os_conference
+
+scheduling_paper:
+  title: A Scheduling Paper
+  venue: os_conference

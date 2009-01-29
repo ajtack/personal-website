@@ -1,0 +1,7 @@
+one:
+  name: Venue One
+  date: <%= Date.today %>
+
+os_conference:
+  name: Operating Systems Conference
+  date: <%= Date.yesterday %>

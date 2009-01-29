@@ -1,2 +1,9 @@
 publication:
   title: Some Publication
+
+venue:
+  name: My Great Conference
+
+author:
+  first_name: John
+  last_name: Doe
