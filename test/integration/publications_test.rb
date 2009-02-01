@@ -13,10 +13,8 @@ class PublicationsTest < ActionController::IntegrationTest
 	
 	private
 		def verify_all_publications_shown
-			publication_count = Publication.count
-			header_row = 1
-			assert_select 'table' do
-				assert_select 'tr', :count => publication_count + header_row
+			assert_select 'ul#Publications' do
+				assert_select 'li', :count => Publication.count
 			end
 		end
 		

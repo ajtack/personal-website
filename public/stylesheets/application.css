@@ -1,0 +1,113 @@
+body	{
+	background: white;
+	color: #333;
+	font-size: 10pt;
+	max-width: 800px;
+	min-width: 500px;
+	margin: auto;
+	padding: 30px;
+}
+
+a	{
+	text-decoration: none;
+	color: #ccc;
+}
+
+h1	{
+	font-family: serif;
+	font-size: 24px;
+	font-weight: bold;
+}
+
+
+/*
+ * Body styles
+ */
+#Content	{
+	min-width: 500px;
+	max-width: 700px;
+	margin: 0 30px 0 30px;
+	padding: 10px;
+	margin-bottom: -1em;
+}
+
+#Content .spacer	{
+	height: 4em;
+}
+
+
+/*
+ * Header styles
+ */
+#Header	{
+	text-align: center;
+	max-width: 800px;
+	margin: auto;
+}
+
+#Header h1	{
+	padding-top: 15px;
+	margin-bottom: none;
+}
+
+#Header #Headshot	{
+	float: left;
+	margin: 0px 15px 15px;
+	height: 150px;
+}
+
+#Header #TitleBlock	{
+	height: 135px;
+	margin-bottom: -2em;
+}
+
+#Header #NavigationBar	{
+	height: 2em;
+}
+
+#Header #NavigationBar a	{
+	color: #999;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#Header #NavigationBar a:hover	{
+	color: #333;
+}
+
+#Header #NavigationBar hr	{
+	background: #cccccc;
+	height: 2pt;
+	border: none;
+	margin: 5px;
+}
+
+#Header #NavigationBar p	{
+	display: inline;
+	margin: 0px 5px 0px 5px;
+	padding: 5px 5px 5px 5px;
+}
+
+#Header #NavigationBar p.selected_link	{
+	border-left: 2px solid #ccc;
+	border-right: 2px solid #ccc;
+	background-color: #eee;
+}
+
+
+/*
+ * Footer Styles
+ */
+#Footer	{
+	clear: both;
+	height: 1em;
+}
+
+#Footer p	{
+	text-align: center;
+	vertical-align: bottom;
+	height: 100%;
+	color: #666666;
+	font-size: 8pt;
+	font-style: oblique;
+}

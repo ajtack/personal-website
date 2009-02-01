@@ -1,10 +1,12 @@
 <%= render :partial => 'layouts/doctype' %>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-	<%= render :partial => 'layouts/common_head' %>
+	<%= render :partial => 'layouts/html_head' %>
 	
 	<body>
 		<%= yield %>
-		<%= render :partial => 'layouts/google_analytics' %>
+		<%= render :partial => 'layouts/application/footer' %>
+		
+		<!-- # render :partial => 'layouts/google_analytics' -->
 	</body>
 </html>

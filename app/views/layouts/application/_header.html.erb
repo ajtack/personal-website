@@ -1,0 +1,12 @@
+<div id="Header">
+	<%= image_tag 'headshot.jpg', :id => 'Headshot' %>
+	<div id="TitleBlock">
+		<h1>Andres Jaan Tack</h1>
+		<p>
+			University of Wisconsin-Madison<br />
+			<%= mail_to 'tack@cs.wisc.edu' -%>
+		</p>
+	</div>
+	<%= render :partial => 'layouts/application/navigation_bar' %>
+	<div style="clear: both; height: 0;"></div>
+</div>

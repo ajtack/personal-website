@@ -1,0 +1,11 @@
+<div id="NavigationBar">
+	<hr />
+	<% public_links.each do |target, name | %>
+		<% unless request.path == target %>
+			<p><%= link_to name, target -%></p>
+		<% else %>
+			<p class="selected_link"><%= link_to name, target -%></p>
+		<% end %>
+	<% end %>
+	<hr />
+</div>

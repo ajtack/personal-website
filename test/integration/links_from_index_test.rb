@@ -10,7 +10,7 @@ class LinksFromIndexTest < ActionController::IntegrationTest
   end
 
 	def verify_existence_of_publications_link
-		assert_select 'a', {:text => 'Publications', :href => publications_url}
+		assert_select 'a', {:text => 'Publications', :count => 1}
 	end
 
 end
