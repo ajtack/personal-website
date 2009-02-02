@@ -2,7 +2,9 @@
 <ul id="Publications">
 	<% @publications.each do |publication| %>
 		<li>
-			<p><%= publication.title -%></p>
+			<p>
+				<%= publication.to_bib -%>
+			</p>
 		</li>
 	<% end %>
 </ul>

@@ -1,0 +1,24 @@
+tack_wrote_scheduling_paper:
+  author: tack
+  publication: scheduling_paper
+  position: 1
+
+haris_also_wrote_scheduling_paper:
+  author: haris
+  publication: scheduling_paper
+  position: 2
+
+remzi_wrote_file_systems_paper:
+  author: remzi
+  publication: file_systems_paper
+  position: 1
+
+haris_wrote_paper_one:
+  author: haris
+  publication: one
+  position: 1
+
+tack_also_wrote_paper_one:
+  author: tack
+  publication: one
+  position: 2

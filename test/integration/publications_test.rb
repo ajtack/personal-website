@@ -13,8 +13,11 @@ class PublicationsTest < ActionController::IntegrationTest
 	
 	private
 		def verify_all_publications_shown
+			sorted_publications = Publication.all.sort
 			assert_select 'ul#Publications' do
-				assert_select 'li', :count => Publication.count
+				assert_select 'li', {:count => Publication.count}, 'The wrong number of publications are listed' do
+					assert_select 'p', {:text => sorted_publications.shift.to_bib}, 'Publications don\'t appear as expected (order? format?)'
+				end
 			end
 		end
 		
