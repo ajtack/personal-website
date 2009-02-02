@@ -1,6 +1,7 @@
 <head>
-	<% unless page_titles[controller.relative_url_root + request.path].nil? -%>
-		<title><%=t :Name -%> :: <%= page_titles[request.path] -%></title>
+	<% total_path = controller.relative_url_root + request.path %>
+	<% unless page_titles[total_path].nil? -%>
+		<title><%=t :Name -%> :: <%= page_titles[total_path] -%></title>
 	<% else -%>
 		<% raise 'No title given for request path: ' + controller.relative_url_root + request.path %>
 	<% end -%>
