@@ -9,6 +9,7 @@ html, body	{
 	height: 100%;
 	margin: auto;
 	font-size: 10pt;
+	padding: 0;
 }
 
 .spacer	{
@@ -21,10 +22,43 @@ html, body	{
 	margin: 0 auto -3em;
 }
 
+#CenterBlock #Headshot {
+	float: left;
+	margin: 15px;
+	width: 200px;
+}
+
+#CenterBlock #NavigationLinks	{
+	clear: both;
+	text-align: center;
+}
+
+#CenterBlock #NavigationLinks a	{
+	color: #999;
+	font-weight: bold;
+	text-decoration: none;
+}
+
+#CenterBlock #NavigationLinks a:hover	{
+	color: #333;
+}
+
+#CenterBlock #NavigationLinks hr	{
+	background: #cccccc;
+	height: 2pt;
+	border: none;
+	margin: 5px;
+}
+
+#CenterBlock #NavigationLinks p	{
+	display: inline;
+	margin: 0px 5px 0px 5px;
+	padding: 5px 5px 5px 5px;
+}
+
 #CenterBlock #TitleBlock	{
 	float: right;
 	width: 450px;
-	padding-bottom: 10em;
 }
 
 #CenterBlock #TitleBlock h1	{
@@ -36,10 +70,4 @@ html, body	{
 
 #CenterBlock #TitleBlock p	{
 	padding: 20px;
-}
-
-#CenterBlock #Headshot {
-	float: left;
-	margin: 15px;
-	width: 200px;
 }
