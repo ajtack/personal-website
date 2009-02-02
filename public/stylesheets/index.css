@@ -43,14 +43,8 @@ html, body	{
 	color: #333;
 }
 
-#CenterBlock #NavigationLinks hr	{
-	background: #cccccc;
-	height: 2pt;
-	border: none;
-	margin: 5px;
-}
-
 #CenterBlock #NavigationLinks p	{
+	font-size: 14pt;
 	display: inline;
 	margin: 0px 5px 0px 5px;
 	padding: 5px 5px 5px 5px;

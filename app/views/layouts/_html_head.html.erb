@@ -1,5 +1,9 @@
 <head>
-	<title>Andres Jaan Tack :: Home (Under Construction)</title>
-	<meta name="author" content="Andres Jaan Tack" />
+	<% unless page_titles[request.path].nil? -%>
+		<title><%=t :Name -%> :: <%= page_titles[request.path] -%></title>
+	<% else -%>
+		<%= raise ApplicationError %>
+	<% end -%>
+	<meta name="<%=t :author -%>" content="<%=t :Name %>" />
 	<%= css_auto_include_tag %>
 </head>

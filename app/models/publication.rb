@@ -21,7 +21,7 @@ class Publication < ActiveRecord::Base
 		when 1:
 			"#{authors.first}. #{title_and_venue}"
 		else
-			"#{authors[0...-1].join(', ')} and #{authors.last}. #{title_and_venue}"
+			"#{authors[0...-1].join(', ')} #{I18n.t(:and)} #{authors.last}. #{title_and_venue}"
 		end
 	end
 	

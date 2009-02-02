@@ -42,3 +42,13 @@ class Test::Unit::TestCase
     config.mode = :rails
   end
 end
+
+class ActionController::IntegrationTest
+	include ApplicationHelper
+end
+
+class ActionController::Integration::Session
+	def t(*somethings)
+		I18n.t(somethings)
+	end
+end

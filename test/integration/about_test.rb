@@ -1,0 +1,15 @@
+require 'test_helper'
+
+class AboutTest < ActionController::IntegrationTest
+	
+	test 'about pages are properly titled'	do
+		visit about_path
+		assert_select 'title', :text => /.+ :: #{page_titles[about_path]}/
+	end
+	
+	test 'about title' do
+		visit about_path
+		assert_select '#Content > h1', :text => t(:About_me)
+	end
+	
+end
