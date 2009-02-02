@@ -2,7 +2,16 @@
 module ApplicationHelper
 	def public_links
 		{
-			publications_path => 'Publications'
+			publications_path => 'Publications',
+			about_path => 'About Me'
+		}
+	end
+	
+	def page_titles
+		{
+			publications_path => 'Publications',
+			about_path => 'About Me',
+			root_path => 'Home'
 		}
 	end
 end

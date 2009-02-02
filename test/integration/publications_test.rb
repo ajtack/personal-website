@@ -1,6 +1,7 @@
 require 'test_helper'
 
 class PublicationsTest < ActionController::IntegrationTest
+
 	test 'publications pages are properly titled'	do
 		visit publications_path
 		verify_title_says_publications
@@ -24,4 +25,5 @@ class PublicationsTest < ActionController::IntegrationTest
 		def verify_title_says_publications
 			assert_select 'title', :text => /.+ :: Publications/
 		end
+
 end
