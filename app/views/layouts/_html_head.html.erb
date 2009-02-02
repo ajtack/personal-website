@@ -1,5 +1,5 @@
 <head>
-	<% total_path = controller.relative_url_root + request.path %>
+	<% total_path = (controller.relative_url_root || '') + request.path %>
 	<% unless page_titles[total_path].nil? -%>
 		<title><%=t :Name -%> :: <%= page_titles[total_path] -%></title>
 	<% else -%>
