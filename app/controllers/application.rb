@@ -11,6 +11,6 @@ class ApplicationController < ActionController::Base
   before_filter :choose_locale
 
 	def choose_locale
-		I18n.locale = request.compatible_language_from(I18n.available_locales)
+		I18n.locale = params[:locale]
 	end
 end
