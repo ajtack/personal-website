@@ -19,8 +19,8 @@ class PublicationTest < ActiveSupport::TestCase
 	
 	test 'has bibliograpy form' do
 		assert Publication.new.respond_to? :to_bib
-		assert_equal "Andres Jaan Tack and Haris Volos. A Scheduling Paper. Operating Systems Conference, #{Date.yesterday}.", publications(:scheduling_paper).to_bib
-		assert_equal "Remzi Arpaci-Dusseau. A File Systems Paper. Operating Systems Conference, #{Date.yesterday}.", publications(:file_systems_paper).to_bib
+		assert_equal "Andres Jaan Tack and Haris Volos. A Scheduling Paper. Operating Systems Conference, #{Date.yesterday.strftime("%B, %Y")}.", publications(:scheduling_paper).to_bib
+		assert_equal "Remzi Arpaci-Dusseau. A File Systems Paper. Operating Systems Conference, #{Date.yesterday.strftime("%B, %Y")}.", publications(:file_systems_paper).to_bib
 	end
 	
 	test 'publication date is from venue' do

@@ -17,6 +17,7 @@ module ApplicationHelper
 		titles = {
 				publications_path => t(:Publications),
 				about_path => t(:About_me),
+				index_path => t(:Home),
 				root_path => t(:Home)
 			}
 		
