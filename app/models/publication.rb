@@ -13,7 +13,7 @@ class Publication < ActiveRecord::Base
 	end
 	
 	def to_bib
-		title_and_venue = "#{title}. #{venue.name}, #{venue.date}."
+		title_and_venue = "#{title}. #{venue.name}, #{venue.date.strftime('%B, %Y')}."
 		
 		case authors.length
 		when 0:
