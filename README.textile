@@ -1,0 +1,10 @@
+h1. Personal Website of Andres Jaan Tack
+
+This website is the application framework for the home page of Andres Jaan "Tack", graduate student at the University of Wisconsin-Madison. The primary goals of the site are:
+
+# to make the author visible to other researchers and potential employers
+# to provide a forum by which the author might share insights gained or relevant news
+# to further provide a forum by which the author might share personal news with friends and family
+# to improve the author's command of Ruby on Rails via experiment.
+
+This is an open project; if you have comments or suggestions, the author can be reached "via e-mail":mailto:ajtack@gmail.com.
