@@ -11,11 +11,6 @@ class ApplicationController < ActionController::Base
   before_filter :choose_locale
 
 	def choose_locale
-		unless params[:locale].nil?
-			I18n.locale = params[:locale]
-		else
-			chosen_locale = request.compatible_language_from(I18n.available_locales) || I18n.default_locale
-			redirect_to request.symbolized_path_parameters.merge(:locale => chosen_locale)
-		end
+		I18n.locale = request.compatible_language_from(I18n.available_locales)
 	end
 end
