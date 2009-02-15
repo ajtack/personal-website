@@ -4,7 +4,7 @@ class AboutTest < ActionController::IntegrationTest
 	
 	test 'about pages are properly titled'	do
 		visit about_path
-		assert_select 'title', :text => /.+ :: #{page_titles[about_path]}/
+		assert_select 'title', :text => /.+ :: #{page_title_for(about_path)}/
 	end
 	
 	test 'about title' do
