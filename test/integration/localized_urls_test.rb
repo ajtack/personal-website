@@ -53,7 +53,7 @@ class LocalizedUrlsTest < ActionController::IntegrationTest
 		
 		def verify_page_link_is_selected(label)
 			assert_select 'ul', :id => 'NavigationBarLinks' do
-				assert_select 'li', {:text => label, :count => 1, :class => 'selected'}
+				assert_select 'li.selected_link', {:text => label, :count => 1}
 			end
 		end
 	
