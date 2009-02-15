@@ -1,9 +1,13 @@
 # Methods added to this helper will be available to all templates in the application.
 module ApplicationHelper
+	RelativeRootPrefix = /^#{ActionController::Base.relative_url_root}/
 	LocalePrefix = /^\/([a-zA-Z]{2})(?=\/|$)/
 	
 	def locale_independentize(path = request.path)
-		path.gsub(LocalePrefix, '')
+		newpath = path
+		newpath.gsub!(RelativeRootPrefix, '')  # Only happens when testing.
+		newpath.gsub!(LocalePrefix, '')
+		newpath
 	end
 
 	def public_links

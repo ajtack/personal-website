@@ -4,10 +4,12 @@ class LocalizedUrlsTest < ActionController::IntegrationTest
 	
 	test 'plain urls' do
 		assert_recognizes ({:controller => 'about', :action => 'index'}), {:path => '/about', :method => :get}
+		
+		about_root_url = '/about'
 		begin
-			visit '/about'
+			visit about_root_url
 		rescue Webrat::PageLoadError => e
-			flunk e.class.name + '. Failed to load page at: /about'
+			flunk "#{e.class.name}. Failed to load page at: #{about_root_url}"
 		end
 		assert_response :success
 		assert_template 'about/index'
@@ -16,7 +18,7 @@ class LocalizedUrlsTest < ActionController::IntegrationTest
 	end
 	
 	test 'default locale urls' do
-		assert_equal "/#{I18n.default_locale}/about", about_path
+		assert_equal "#{ActionController::Base.relative_url_root}/#{I18n.default_locale}/about", about_path
 		begin
 			visit about_url
 		rescue Webrat::PageLoadError => e
@@ -33,7 +35,7 @@ class LocalizedUrlsTest < ActionController::IntegrationTest
 		fail 'Test must be run with the default locale' if locale == I18n.default_locale
 		localized_about_path = about_path(:locale => locale)
 		
-		assert_equal "/#{locale}/about", localized_about_path
+		assert_equal "#{ActionController::Base.relative_url_root}/#{locale}/about", localized_about_path
 		begin
 			visit localized_about_path
 		rescue Webrat::PageLoadError => e
