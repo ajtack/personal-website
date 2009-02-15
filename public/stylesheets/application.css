@@ -13,12 +13,15 @@ a	{
 	color: #ccc;
 }
 
+a:hover	{
+	color: #333;
+}
+
 h1	{
 	font-family: serif;
 	font-size: 24px;
 	font-weight: bold;
 }
-
 
 /*
  * Body styles
@@ -40,6 +43,7 @@ h1	{
  * Header styles
  */
 #Header	{
+	position: relative;
 	text-align: center;
 	max-width: 800px;
 	margin: auto;
@@ -64,6 +68,7 @@ h1	{
 #Header #NavigationBar	{
 	list-style-type: none;
 	margin-top: 0px;
+	margin-bottom: 0px;
 }
 
 #Header #NavigationBar a	{
@@ -93,6 +98,38 @@ h1	{
 	border-left: 2px solid #ccc;
 	border-right: 2px solid #ccc;
 	background-color: #eee;
+}
+
+#Header ul#Locales	{
+	margin-top: 5px;
+	list-style: none;
+	position: absolute;
+	right: 10px;
+}
+
+#Header ul#Locales > li	{
+	display: inline;
+	color: #aaa;
+	margin-right: 5px;
+}
+
+#Header ul#Locales > li:before	{
+	content: " | "; 
+}
+
+#Header ul#Locales > li:first-child:before	{
+	content: ""; 
+}
+
+#Header ul#Locales > li img	{
+	border: none;
+	width: 16px;
+}
+
+#Header ul#Locales > li a	{
+	border: none;
+	width: 16px;
+	margin-left: 6px;
 }
 
 

@@ -48,6 +48,14 @@ class ActionController::IntegrationTest
 end
 
 class ActionController::Integration::Session
+	I18n.backend.class_eval do
+		public :lookup
+	end
+	
+	def lookup(locale, key)
+		I18n.backend.lookup(locale, key)
+	end
+	
 	def t(*somethings)
 		I18n.t(somethings)
 	end

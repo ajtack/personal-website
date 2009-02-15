@@ -1,0 +1,11 @@
+<ul id="Locales">
+	<% current_locale = I18n.locale -%>
+	<% I18n.available_locales.each do |new_locale| %>
+		<% I18n.locale = new_locale -%>
+		<li>
+			<%= link_to "#{image_tag "locales/#{t(:iso_3166_code)}.png", :alt => t(:flag_name)} #{t(:language_name)}",
+				request.path_parameters.merge(:locale => new_locale) -%>
+		</li>
+	<% end %>
+	<% I18n.locale = current_locale -%>
+</ul>
