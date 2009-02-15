@@ -61,6 +61,11 @@ h1	{
 	margin-bottom: -2em;
 }
 
+#Header #NavigationBar	{
+	list-style-type: none;
+	margin-top: 0px;
+}
+
 #Header #NavigationBar a	{
 	color: #999;
 	font-weight: bold;
@@ -78,13 +83,13 @@ h1	{
 	margin: 5px;
 }
 
-#Header #NavigationBar p	{
+#Header #NavigationBar li	{
 	display: inline;
 	margin: 0px 5px 0px 5px;
 	padding: 5px 5px 5px 5px;
 }
 
-#Header #NavigationBar p.selected_link	{
+#Header #NavigationBar li.selected_link	{
 	border-left: 2px solid #ccc;
 	border-right: 2px solid #ccc;
 	background-color: #eee;

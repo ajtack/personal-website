@@ -1,9 +1,9 @@
 <head>
 	<% total_path = (controller.relative_url_root || '') + request.path %>
-	<% unless page_titles[total_path].nil? -%>
-		<title><%=t :Name -%> :: <%= page_titles[total_path] -%></title>
+	<% unless page_title_for(total_path).nil? -%>
+		<title><%=t :Name -%> :: <%= page_title_for(total_path) -%></title>
 	<% else -%>
-		<% raise 'No title given for request path: ' + controller.relative_url_root + request.path %>
+		<% raise 'No title given for request path: ' + total_path %>
 	<% end -%>
 	<meta name="<%=t :author -%>" content="<%=t :Name %>" />
 	<%= css_auto_include_tag %>

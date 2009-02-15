@@ -4,7 +4,7 @@ class PublicationsTest < ActionController::IntegrationTest
 
 	test 'publications pages are properly titled'	do
 		visit publications_path
-		assert_select 'title', :text => /.? :: #{page_titles[publications_path]}/
+		assert_select 'title', :text => /.? :: #{page_title_for(publications_path)}/
 	end
 
 	test 'all publications are listed' do

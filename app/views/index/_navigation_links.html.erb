@@ -1,5 +1,5 @@
 <div id="NavigationLinks">
-	<% public_links.each do |target, name | %>
-		<p><%= link_to name, target -%></p>
+	<% public_links.each do |target, link| %>
+		<p><%= link_to link[:title], link[:path] -%></p>
 	<% end %>
 </div>
