@@ -1,10 +1,10 @@
 <ul id="NavigationBar">
 	<hr />
-	<% public_links.each do |target, name | %>
-		<% unless request.path == target %>
-			<li><%= link_to name, target -%></li>
+	<% public_links.each do |target, link| %>
+		<% unless locale_independentize == target %>
+			<li><%= link_to link[:title], link[:path] -%></li>
 		<% else %>
-			<li class="selected_link"><%= link_to name, target -%></li>
+			<li class="selected_link"><%= link_to link[:title], link[:path] -%></li>
 		<% end %>
 	<% end %>
 	<hr />

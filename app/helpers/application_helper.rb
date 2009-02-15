@@ -2,35 +2,27 @@
 module ApplicationHelper
 	LocalePrefix = /^\/([a-zA-Z]{2})(?=\/|$)/
 	
-	def locale_independent_path
-		request.path.gsub(LocalePrefix, '')
+	def locale_independentize(path = request.path)
+		path.gsub(LocalePrefix, '')
 	end
 
-	def public_links(path = nil)
+	def public_links
 		link_labels = {
-				publications_path => t(:Publications),
-				about_path => t(:About_me)
+				locale_independentize(publications_path) => {:title => t(:Publications), :path => publications_path},
+				locale_independentize(about_path) => {:title => t(:About_me), :path => about_path}
 			}
 			
-		if path.nil?
-			link_labels
-		else
-			link_labels[path]
-		end
+		link_labels
 	end
 	
 	def page_title_for(path = nil)
 		titles = {
-				publications_path.gsub(LocalePrefix, '') => t(:Publications),
-				about_path.gsub(LocalePrefix, '') => t(:About_me),
-				index_path.gsub(LocalePrefix, '') => t(:Home),
-				root_path.gsub(LocalePrefix, '') => t(:Home)
+				locale_independentize(publications_path) => t(:Publications),
+				locale_independentize(about_path) => t(:About_me),
+				locale_independentize(index_path) => t(:Home),
+				locale_independentize(root_path) => t(:Home)
 			}
-		
-		if path.nil?
-			titles
-		else
-			titles[path.gsub(LocalePrefix, '')]
-		end
+			
+		titles[locale_independentize(path)]
 	end
 end
