@@ -1,11 +1,11 @@
-<div id="NavigationBar">
+<ul id="NavigationBar">
 	<hr />
 	<% public_links.each do |target, name | %>
 		<% unless request.path == target %>
-			<p><%= link_to name, target -%></p>
+			<li><%= link_to name, target -%></li>
 		<% else %>
-			<p class="selected_link"><%= link_to name, target -%></p>
+			<li class="selected_link"><%= link_to name, target -%></li>
 		<% end %>
 	<% end %>
 	<hr />
-</div>
+</ul>
