@@ -5,7 +5,10 @@ et:
   Home: Kodu
   Name: Andres Jaan Tack
   Publications: Publikatsioonid
-  Purpose_statement: Olen esimese aasta informaatika magistrantuur Wisconsin-Madison Ülikoolis, olen lootusrikas õpetaja ja uurimaja, ja olen muusik. See on minu koduleht, kus ma arutan nad kõik koos, kellegile kellel on huvi.
+  
+  content:
+    purpose_statement: "Olen esimese aasta informaatika magistrantuur Wisconsin-Madison Ülikoolis, olen lootusrikas õpetaja ja uurimaja, ja olen muusik. See on minu asukoht, kus ma arutan nad kõik koos."
+    page_not_translated: "Vabandust, aga see leht veel ei ole olnud tõlgetud eesti keelesse."
   
   language_name: Eesti keel
   flag_name: Eesti lipp

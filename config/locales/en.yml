@@ -5,7 +5,10 @@ en:
   Home: Home
   Name: Andres Jaan Tack
   Publications: Publications
-  Purpose_statement: I am a first-year graduate student in computer science at the University of Wisconsin-Madison, I am an aspiring teacher and researcher, and I am a musician. This is my home page, where I will discuss all of these interests together, for the benefit of any interested.
+  
+  content:
+    purpose_statement: "I am a first-year graduate student in computer science at the University of Wisconsin-Madison, I am an aspiring teacher and researcher, and I am a musician. This is my website, where I will discuss all of these interests together."
+    page_not_translated: "Sorry, but this page has not yet been translated into English."
   
   language_name: English
   flag_name: American Flag
