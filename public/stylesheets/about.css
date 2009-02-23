@@ -1,0 +1,8 @@
+#Content a	{
+	color: #333377;
+}
+
+#Content a:hover	{
+	color: #3333CC;
+	text-decoration: underline;
+}
