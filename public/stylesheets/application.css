@@ -127,14 +127,24 @@ ul#Locales > li a	{
 #Header #NavigationBar li	{
 	display: inline;
 	margin: 0px 5px 0px 5px;
-	padding: 5px 5px 5px 5px;
+	padding: 0;
 }
 
 #Header #NavigationBar li.selected_link	{
+	margin: 0px 3px 0px 3px;
+}
+
+#Header #NavigationBar li p	{
+	display: inline;
+	padding: 5px 5px 5px 5px;
+}
+
+#Header #NavigationBar li.selected_link p	{
+	display: inline;
 	border-left: 2px solid #ccc;
 	border-right: 2px solid #ccc;
 	background-color: #eee;
-	margin: 0px 3px 0px 3px;
+	padding: 5px 5px 5px 5px;
 }
 
 /*

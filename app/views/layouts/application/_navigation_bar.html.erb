@@ -2,9 +2,17 @@
 	<hr />
 	<% public_links.each do |target, link| %>
 		<% unless locale_independentize == target %>
-			<li><%= link_to link[:title], link[:path] -%></li>
+			<li>
+				<a href="<%= link[:path] -%>">
+					<p><%= link[:title] -%></p>
+				</a>
+			</li>			
 		<% else %>
-			<li class="selected_link"><%= link_to link[:title], link[:path] -%></li>
+			<li class="selected_link">
+				<a href="<%= link[:path] -%>">
+					<p><%= link[:title] -%></p>
+				</a>
+			</li>
 		<% end %>
 	<% end %>
 	<hr />
