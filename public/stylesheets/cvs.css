@@ -1,0 +1,91 @@
+h1	{
+	text-align: center;
+}
+
+h2	{
+	clear: both;
+	text-align: left;
+	margin-top: 40px;
+	line-height: 0;
+}
+
+h3	{
+	font-size: 9pt;
+	font-weight: bold;
+}
+
+h3:first-line	{
+	font-size: 11pt;
+}
+
+h5	{
+	display: inline;
+	padding-right: 10px;
+}
+
+ul	{
+	margin-bottom: 20px;
+}
+
+ul.toplevel	{
+	list-style: none;
+}
+
+#PdfOption	{
+	font-size: 10pt;
+}
+
+#ContactInfo	{
+	width: 60%;
+	margin: auto;
+}
+
+#ContactInfo h3:after	{
+	content: ": ";
+}
+
+#Objective	{
+	text-align: center;
+}
+
+#Education h3	{
+	display: block;
+}
+
+#Education ul	{
+	list-style: none;
+}
+
+#Education li.school	{
+	width: 50%;
+	float: left;
+	margin-bottom: 20px;
+}
+
+#Publications ul.authors	{
+	padding: 0;
+}
+
+#Publications ul.authors li	{
+    display: inline;
+}
+
+#Publications ul.authors li:after	{
+	content: ", ";
+}
+
+#Publications ul.authors li:last-child:before	{
+	content: " and ";
+}
+
+#Publications ul.authors li:last-child:after	{
+	content: "";
+}
+
+#Publications p	{
+	padding-left: 20px;
+}
+
+#Publications ul	{
+	list-style: default;
+}

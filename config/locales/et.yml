@@ -12,6 +12,11 @@ et:
   content:
     purpose_statement: "Olen õpilane University of Wisconsin-Madison'is, kus ma taotlen doktori kraadi kompuuteri teaduses. Loodan saada õpetajaks ja uurimistöötegijaks, ja olen huvitatud muusikast. See on minu koduleht, kus see on kõik üles toodud."
     page_not_translated: "Käesolev leht veel ei ole tõlgetud eesti keelesse."
+
+  cv:
+    # The "as_pdf" text is rendered on either side of a link to the PDF reading "PDF".
+    as_pdf_before: "Ka kättesaadav "
+    as_pdf_after: "'na."
   
   language_name: Eesti keel
   flag_name: Eesti lipp

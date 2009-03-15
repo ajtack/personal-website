@@ -12,6 +12,11 @@ es:
   content:
     purpose_statement: "Soy estudiante graduado a la Universidad de Wisconsin a Madison, soy enseñante y a investigador científico aspirante, y soy músico. Ésto es mi página web, donde voy a discutir lo todo junto."
     page_not_translated: "Lo siento, pero esta página ya no ha sido traducido a Español."
+    
+  cv:
+    # The "as_pdf" text is rendered on either side of a link to the PDF reading "PDF".
+    as_pdf_before: "También disponible como "
+    as_pdf_after: "."
   
   language_name: Español
   flag_name: Bandera Española
