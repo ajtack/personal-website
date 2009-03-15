@@ -15,16 +15,17 @@ body	{
 
 a	{
 	text-decoration: none;
-	color: #ccc;
+	color: #333377;
 }
 
 a:hover	{
-	color: #333;
+	color: #3333cc;
+	text-decoration: underline;
 }
 
 h1	{
 	font-family: serif;
-	font-size: 24px;
+	font-size: 24pt;
 	font-weight: bold;
 }
 
@@ -87,6 +88,9 @@ ul#Locales > li a	{
 }
 
 #Header h1	{
+    text-align: center;
+    font-size: 24pt;
+    font-weight: bold;
 	padding-top: 15px;
 	margin-bottom: none;
 }
