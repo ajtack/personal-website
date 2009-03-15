@@ -1,10 +1,13 @@
 en:
-  About_me: About Me
   and: and
   author: author
-  Home: Home
   Name: Andres Jaan Tack
-  Publications: Publications
+
+  page_titles:
+    about_me: About Me
+    cv: Curriculum Vitae
+    home: Home
+    publications: Publications
   
   content:
     purpose_statement: "I am a first-year graduate student in computer science at the University of Wisconsin-Madison, I am an aspiring teacher and researcher, and I am a musician. This is my website, where I will discuss all of these interests together."

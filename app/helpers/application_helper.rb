@@ -12,8 +12,9 @@ module ApplicationHelper
 
 	def public_links
 		link_labels = {
-				locale_independentize(publications_path) => {:title => t(:Publications), :path => publications_path},
-				locale_independentize(about_path) => {:title => t(:About_me), :path => about_path}
+				locale_independentize(publications_path) => {:title => t('page_titles.publications'), :path => publications_path},
+				locale_independentize(about_path) => {:title => t('page_titles.about_me'), :path => about_path},
+				locale_independentize(cv_path) => {:title => t('page_titles.cv'), :path => cv_path}
 			}
 			
 		link_labels
@@ -21,10 +22,11 @@ module ApplicationHelper
 	
 	def page_title_for(path = nil)
 		titles = {
-				locale_independentize(publications_path) => t(:Publications),
-				locale_independentize(about_path) => t(:About_me),
-				locale_independentize(index_path) => t(:Home),
-				locale_independentize(root_path) => t(:Home)
+				locale_independentize(about_path) => t('page_titles.about_me'),
+				locale_independentize(index_path) => t('page_titles.home'),
+				locale_independentize(root_path) => t('page_titles.home'),
+				locale_independentize(publications_path) => t('page_titles.publications'),
+				locale_independentize(cv_path) => t('page_titles.cv')
 			}
 			
 		titles[locale_independentize(path)]

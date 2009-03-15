@@ -1,10 +1,13 @@
 et:
-  About_me: Minust
   and: ja
   author: autor
-  Home: Koduleht
   Name: Andres Jaan Tack
-  Publications: Publikatsioonid
+
+  page_titles:
+    about_me: Minust
+    cv: Curriculum Vitae
+    home: Koduleht
+    publications: Publikatsioonid
   
   content:
     purpose_statement: "Olen õpilane University of Wisconsin-Madison'is, kus ma taotlen doktori kraadi kompuuteri teaduses. Loodan saada õpetajaks ja uurimistöötegijaks, ja olen huvitatud muusikast. See on minu koduleht, kus see on kõik üles toodud."

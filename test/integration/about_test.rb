@@ -9,7 +9,7 @@ class AboutTest < ActionController::IntegrationTest
 	
 	test 'about title' do
 		visit about_path
-		assert_select '#Content > h1', :text => t(:About_me)
+		assert_select '#Content > h1', :text => t('page_titles.about_me')
 	end
 	
 end

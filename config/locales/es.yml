@@ -1,10 +1,13 @@
 es:
-  About_me: Acerca de Mi
   and: y
   author: autor
-  Home: Inicio
   Name: Andres Jaan Tack
-  Publications: Publicaciones
+  
+  page_titles:
+    about_me: Acerca de Mi
+    cv: Curriculum Vitae
+    home: Inicio
+    publications: Publicaciones
   
   content:
     purpose_statement: "Soy estudiante graduado a la Universidad de Wisconsin a Madison, soy enseñante y a investigador científico aspirante, y soy músico. Ésto es mi página web, donde voy a discutir lo todo junto."

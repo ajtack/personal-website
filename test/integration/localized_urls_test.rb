@@ -14,7 +14,7 @@ class LocalizedUrlsTest < ActionController::IntegrationTest
 		assert_response :success
 		assert_template 'about/index'
 		verify_locale_is(:en)
-		verify_navbar_link_is_selected(t(:About_me))
+		verify_navbar_link_is_selected(t('page_titles.about_me'))
 	end
 	
 	test 'default locale urls' do
@@ -27,7 +27,7 @@ class LocalizedUrlsTest < ActionController::IntegrationTest
 		assert_response :success
 		assert_template 'about/index'
 		verify_locale_is(I18n.default_locale.to_s)
-		verify_navbar_link_is_selected(t(:About_me))
+		verify_navbar_link_is_selected(t('page_titles.about_me'))
 	end
 	
 	test 'non-default locale urls' do
@@ -44,7 +44,7 @@ class LocalizedUrlsTest < ActionController::IntegrationTest
 		assert_response :success
 		assert_template 'about/index'
 		verify_locale_is(locale)
-		verify_navbar_link_is_selected(t(:About_me))
+		verify_navbar_link_is_selected(t('page_titles.about_me'))
 	end
 	
 	test 'locale selector' do
