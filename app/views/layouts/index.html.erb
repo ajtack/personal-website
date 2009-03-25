@@ -6,6 +6,7 @@
 	<body>
 		<%= render :partial => 'layouts/application/locale_select' %>
 		<%= yield %>
+		<div class="notice"><%= flash[:notice] %></div>
 		<%= render :partial => 'layouts/application/footer' %>
 		
 		<!-- # render :partial => 'layouts/google_analytics' -->

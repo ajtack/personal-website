@@ -7,6 +7,8 @@
 		<%= render :partial => 'layouts/application/locale_select' %>
 		<%= render :partial => 'layouts/application/header' %>
 		<div id="Content">
+			<div class="notice"><%= flash[:notice] -%></div>
+			<div class="error"><%= flash[:error] %></div>
 			<%= yield %>
 			<div class="spacer"></div>
 		</div>
