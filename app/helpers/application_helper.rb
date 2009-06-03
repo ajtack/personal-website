@@ -22,6 +22,8 @@ module ApplicationHelper
 	
 		def page_title_for(path = nil)
 			titles = {
+					locale_independentize(session_path) => 'Login',
+					locale_independentize(login_path) => 'Login',
 					locale_independentize(about_path) => t('page_titles.about_me'),
 					locale_independentize(index_path) => t('page_titles.home'),
 					locale_independentize(root_path) => t('page_titles.home'),

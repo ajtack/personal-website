@@ -1,10 +1,6 @@
 require 'test_helper'
-require 'action_view/test_case'
-require 'action_view/helpers'
 
-class ApplicationHelperTest < ActionView::TestCase
-	include ApplicationHelper
-	
+class ApplicationHelperTest < ActionView::TestCase	
 	# This test documents a bug where the locale_independentize function
 	# was actually modifying the parameter of page_title_for() function
 	# such that the cv controller (which looks like a locale) would
