@@ -1,6 +1,3 @@
-[submodule "vendor/plugins/http_accept_language"]
-	path = vendor/plugins/http_accept_language
-	url = git@github.com:ajtack/http_accept_language.git
 [submodule "vendor/plugins/valid_attributes"]
 	path = vendor/plugins/valid_attributes
 	url = git://github.com/grosser/valid_attributes.git
