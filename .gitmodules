@@ -13,3 +13,6 @@
 [submodule "vendor/plugins/http_accept_language"]
 	path = vendor/plugins/http_accept_language
 	url = git://github.com/iain/http_accept_language.git
+[submodule "vendor/plugins/restful_authentication"]
+	path = vendor/plugins/restful_authentication
+	url = git://github.com/technoweenie/restful-authentication.git
