@@ -12,7 +12,6 @@ set :branch, 'master'
 set :deploy_via, :remote_cache
 set :git_shallow_clone, 1
 set :git_enable_submodules, 1
-set :git_update_submodules, 1
 set :use_sudo, false
 set :deploy_to, "/home/#{user}/sites/#{application}"
 
