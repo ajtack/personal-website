@@ -1,5 +1,9 @@
 # Settings specified here will take precedence over those in config/environment.rb
 
+# This is here because the website will be channeled through the pages.cs server, using
+# that more venerable address.
+config.action_controller.relative_url_root = '/~tack/index.php'
+
 # The production environment is meant for finished, "live" apps.
 # Code is not reloaded between requests
 config.cache_classes = true
