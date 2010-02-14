@@ -4,7 +4,7 @@ My name is Andres Jaan Tack, and I'm a second-year Ph.D graduate student in <a h
 </p>
 
 <p>
-As a systems researcher, my work thus far has been connected with emerging transactional memory implementations, assisting <a href="http://pages.cs.wisc.edu/~hvolos/">Haris Volos</a>. Specifically, as my part of our recently published paper (xCalls: Safe I/O in Memory Transactions), I spent a great deal of time working with the Intel <a href="http://software.intel.com/en-us/articles/intel-c-stm-compiler-prototype-edition-20/">Software Transactional Memory (STM) Prototype</a> compiler, replacing different subsystems of the <a href="https://www.isc.org/software/bind">BIND</a> DNS server with transactionalized versions and measuring performance results. The results will be published in paper form at <a href="http://eurosys2009.informatik.uni-erlangen.de/">EuroSys 2009</a>.
+	As a systems researcher, I have worked extensively with software transactional memory. I have converted large programs to use I/O-safe transactions instead of mutexes, I have used TM as a bug-fixing tool and I am recently modifying a TinySTM-based system to support transactions in the context of storage-class memory (e.g. PCM). I view memory transactions as a useful concurrent programming metaphor alongside existing metaphors like mutexes. Furthermore, in my recent work, I propose that the traditional view of memory transactions (that they support full atomicity and isolation guarantees) may not be necessary. In fact, I believe that narrow-purpose transactions, supporting special cases rather general ones, are more likely to be widely successful.
 </p>
 
 <p>
